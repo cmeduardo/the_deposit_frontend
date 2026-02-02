@@ -34,7 +34,7 @@ import type {
   LowStockItem,
 } from './types'
 
-const API_BASE_URL = 'https://the-deposit-backend.onrender.com'
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL
 
 class ApiError extends Error {
   constructor(public status: number, message: string) {
